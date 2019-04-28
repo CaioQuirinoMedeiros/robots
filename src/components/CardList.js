@@ -14,7 +14,7 @@ const CardList = ({robots, clickRobot}) => {
         );
     });
     return (
-        <div className="board dragscroll">
+        <div className="board">
             {cardsArray}
         </div>
     );

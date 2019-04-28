@@ -1,7 +1,6 @@
 import React from "react";
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
-import Scroll from "../components/Scroll";
 import Detail from "../components/Detail";
 
 class App extends React.Component {
@@ -32,6 +31,10 @@ class App extends React.Component {
       .then(user => this.setState({ detail: user }));
   };
 
+  onCloseRobot = event => {
+    this.setState({detail: ''})
+  }
+
   render() {
     const filteredRobots = this.state.robots.filter(robot => {
       return robot.name
@@ -40,16 +43,16 @@ class App extends React.Component {
     });
     return (
       <div className="app_box">
-        <Detail user={this.state.detail} />
         <div className="app_header">
-          <div className="wrapper">
+          <div className="wrapper-v">
             <h1>Robo Friends</h1>
             <SearchBox searchChange={this.onSearchChange} />
           </div>
         </div>
-        <Scroll>
+        <div className="content wrapper-h">
           <CardList robots={filteredRobots} clickRobot={this.onClickRobot} />
-        </Scroll>
+          <Detail user={this.state.detail} closeRobot={this.onCloseRobot} />
+        </div>
       </div>
     );
   }

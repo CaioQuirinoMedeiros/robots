@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ id, name, email, clickRobot }) => {
   return (
-    <div className="card" id={id} onClick={clickRobot}>
+    <div className="card resume" id={id} onClick={clickRobot}>
       <img
         className="card-img"
         alt="foto-robo"

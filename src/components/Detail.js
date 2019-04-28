@@ -1,23 +1,32 @@
 import React from "react";
 
-const Detail = ({ user }) => {
-  const { id, name, email, adress, phone } = user;
+const Detail = ({ user, closeRobot }) => {
+  if (!Object.keys(user).length) return <div />
+
+  const { id, name, email, address, company, phone } = user;
+
   const detail = (
-    <div className="detail">
+    <div className="card detail">
       <img
         className="card-img"
         alt="foto-robo"
         src={`https://robohash.org/robo-${id}?200x200`}
       />
       <div className="card-info">
-        <p>{name}</p>
-        <p>{email}</p>
-        <p>{adress}</p>
-        <p>{phone}</p>
+        <p><strong>Name:</strong> {name}</p>
+        <p><strong>Email:</strong> {email}</p>
+        <p><strong>Phone:</strong> {phone}</p>
+        <p><strong>Address:</strong> {address.street} {address.suit}, {address.city} - {address.zipcode}  </p>
       </div>
+      <div className="card-phrase">
+        <p>"{company.catchPhrase}"</p>
+      </div>
+      <button className="close" onClick={closeRobot}>
+        X
+      </button>
     </div>
   );
-  return Object.keys(user).length ? detail : <div></div>
+  return detail
 };
 
 export default Detail;
