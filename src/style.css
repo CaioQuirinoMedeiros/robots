@@ -12,8 +12,6 @@
 }
 
 /********** REUSABLE **********/
-.wrapper-v {
-}
 
 .wrapper-h {
   display: flex;
@@ -110,10 +108,8 @@ button {
   transition: all 0.3s;
   cursor: pointer;
 }
-.card.resume:hover {
-  background-color: rgba(173, 216, 230, 0.8);
-  box-shadow: 0 0 10px 3px #222;
-}
+.card.resume:hover { background-color: rgba(173, 216, 230, 0.8); }
+.active{ background-color: rgba(173, 216, 230, 0.8); }
 .card-img {
   width: 200px;
   height: auto;
@@ -132,8 +128,6 @@ button {
   min-width: 350px;
   justify-content: space-between;
   cursor: default;
-}
-.detail > .card-img {
 }
 .detail > .card-info p {
   text-align: left;

@@ -28,12 +28,16 @@ class App extends React.Component {
       `https://jsonplaceholder.typicode.com/users/${event.currentTarget.id}`
     )
       .then(response => response.json())
-      .then(user => this.setState({ detail: user }));
+      .then(user => {
+        this.setState({ detail: user });
+      });
+    console.log("clicou");
+    event.currentTarget.classList.add("card-active");
   };
 
   onCloseRobot = event => {
-    this.setState({detail: ''})
-  }
+    this.setState({ detail: "" });
+  };
 
   render() {
     const filteredRobots = this.state.robots.filter(robot => {
@@ -44,13 +48,17 @@ class App extends React.Component {
     return (
       <div className="app_box">
         <div className="app_header">
-          <div className="wrapper-v">
+          <div>
             <h1>Robo Friends</h1>
             <SearchBox searchChange={this.onSearchChange} />
           </div>
         </div>
         <div className="content wrapper-h">
-          <CardList robots={filteredRobots} clickRobot={this.onClickRobot} />
+          <CardList
+            robots={filteredRobots}
+            clickRobot={this.onClickRobot}
+            activeRobot={this.state.detail}
+          />
           <Detail user={this.state.detail} closeRobot={this.onCloseRobot} />
         </div>
       </div>
