@@ -9,8 +9,8 @@ const Card = ({ id, name, email, clickRobot }) => {
         src={`https://robohash.org/robo-${id}?200x200`}
       />
       <div className="card-info">
-        <h2>{name}</h2>
-        <p>{email}</p>
+        <h3>{name}</h3>
+        <p>{email.toLowerCase()}</p>
       </div>
     </div>
   );

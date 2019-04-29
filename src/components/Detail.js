@@ -14,7 +14,7 @@ const Detail = ({ user, closeRobot }) => {
       />
       <div className="card-info">
         <p><strong>Name:</strong> {name}</p>
-        <p><strong>Email:</strong> {email}</p>
+        <p><strong>Email:</strong> {email.toLowerCase()}</p>
         <p><strong>Phone:</strong> {phone}</p>
         <p><strong>Address:</strong> {address.street} {address.suit}, {address.city} - {address.zipcode}  </p>
       </div>
