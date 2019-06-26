@@ -35,7 +35,7 @@ class App extends React.Component {
     event.currentTarget.classList.add("card-active");
   };
 
-  onCloseRobot = event => {
+  onCloseRobot = () => {
     this.setState({ detail: "" });
   };
 
