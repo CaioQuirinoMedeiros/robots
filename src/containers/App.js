@@ -31,7 +31,6 @@ class App extends React.Component {
       .then(user => {
         this.setState({ detail: user });
       });
-    console.log("clicou");
     event.currentTarget.classList.add("card-active");
   };
 

@@ -2,7 +2,6 @@ import React from "react";
 
 const Card = ({ id, name, email, clickRobot, activeRobot }) => {
   const active = id === activeRobot.id ? "active" : "";
-  console.log("activeRobot.id");
   return (
     <div className={`card resume ${active}`} id={id} onClick={clickRobot}>
       <img
