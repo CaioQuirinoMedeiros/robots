@@ -1,6 +1,6 @@
 # Robots App
 
-Essa é uma aplicação em React que consome a api [JSON placehold](https://jsonplaceholder.typicode.com/).
+This project build with react consumes the api [JSON placeholder](https://jsonplaceholder.typicode.com/) to generate some fake users with robot avatars by [ROBOHASH](https://robohash.org/). You can filter the users searching by name.
 
 ## Available Scripts
 
