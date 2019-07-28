@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "be7a6ee8f3b8db7b5d72",
-    "url": "/robots/static/css/main.3c2d9979.chunk.css"
+    "revision": "9a1414aeb281fd410119",
+    "url": "/robots/static/css/main.b1861436.chunk.css"
   },
   {
-    "revision": "be7a6ee8f3b8db7b5d72",
-    "url": "/robots/static/js/main.723cede8.chunk.js"
+    "revision": "9a1414aeb281fd410119",
+    "url": "/robots/static/js/main.9c86e883.chunk.js"
   },
   {
     "revision": "840e4d37dfd0ea1eedc1",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/robots/static/media/SEGA.82e09f78.TTF"
   },
   {
-    "revision": "86abe57d7df50badb9c63acad0315b8e",
+    "revision": "b02bc959c95aac9d0c893b61f7d468e0",
     "url": "/robots/index.html"
   }
 ];
