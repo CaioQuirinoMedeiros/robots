@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/robots/static/media/SEGA.82e09f78.TTF"
   },
   {
-    "revision": "b02bc959c95aac9d0c893b61f7d468e0",
+    "revision": "7369e876bec98d2823d69e8087ad9982",
     "url": "/robots/index.html"
   }
 ];
